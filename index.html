@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rakesh De — Electronics Engineer</title>
+  <meta name="description" content="Portfolio of Rakesh De — Electronics Engineer specializing in SCADA & maintenance" />
+  <style>
+    :root{
+      --bg:#ffffff; --panel:#f8fafc; --text:#0f172a; --muted:#64748b; --accent:#0ea5e9; --glass: rgba(15,23,42,0.04);
+      --radius:12px; --gap:18px; --maxw:1100px;
+    }
+    :root.dark{
+      --bg:#0b1220; --panel:#071023; --text:#e6eef8; --muted:#9aa8bd; --accent:#60a5fa; --glass: rgba(255,255,255,0.03);
+    }
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial; background:linear-gradient(180deg,var(--bg),var(--panel)); color:var(--text);}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+    .nav{display:flex;align-items:center;gap:16px;background:var(--glass);padding:10px;border-radius:12px}
+    .brand{font-weight:700}
+    .hero{display:grid;grid-template-columns:1fr 300px;gap:28px;align-items:center;margin-top:28px}
+    .hero img{width:100%;border-radius:50%;box-shadow:0 4px 16px rgba(0,0,0,0.15);object-fit:cover}
+    .card{background:var(--panel);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.06);}
+    footer{text-align:center;margin-top:40px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">Rakesh De</div>
+      <div>Electronics Engineer — SCADA & Maintenance</div>
+    </div>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1>Hi, I’m Rakesh De</h1>
+          <p>Electronics Engineer with experience in SCADA systems, installation, troubleshooting, and maintenance.</p>
+        </div>
+      </div>
+      <aside>
+        <img src="imagesrakesh.jpg" alt="Rakesh De" />
+      </aside>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>AMC Engineer — Ashida Electronics Pvt Ltd</h3>
+        <p>Apr 2025 – Present</p>
+        <ul>
+          <li>Maintain, troubleshoot, and support SCADA systems and related equipment.</li>
+          <li>Install, configure, and commission SCADA RTUs, servers, and networks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>IoT-Based Smart and Secure Bank Locker System</h3>
+        <p>Designed a locker controlled by an Android app with SMS alerts for security.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Rakesh De · Built with HTML, CSS, JavaScript
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
